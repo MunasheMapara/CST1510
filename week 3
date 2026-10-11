@@ -1,0 +1,57 @@
+#print user name 
+print("Enter your name: ");
+name = input();
+print("Your name is: ",name, "\n");
+
+#print integer
+print("Enter an integer: ");
+num = int(input());
+print("Your integer is: ",num);
+
+#add 2 integers
+print("\n Enter first integer: ");
+num1 = int(input());
+print("Enter second integer: ");
+num2 = int(input());
+sum = num1 + num2;
+print("The sum is: ",sum,"\n");
+
+#multiply two decimal numbers
+print("Enter first decimal number: ");
+num3 = float(input());
+print("Enter second decimal number: ");
+num4 = float(input());
+product = num3 * num4;
+print("The product is: ",product,"\n");
+
+# find ASCII value of a character
+print("Enter a character: ");
+char = input(); 
+print("The ASCII value of ", char, " is: ", ord(char), "\n");
+
+# dividing two integers
+print("Enter first integer: ");
+num5 = int(input());
+print("Enter second integer: ");
+num6 = int(input());
+quotient = num5 // num6;
+remainder = num5 % num6;
+print("The quotient is: ",quotient,"\n");
+print("The remainder is: ",remainder,"\n"); 
+
+# find out the size of int, float,double and char of your system
+import sys
+print("The size of int is: ", sys.getsizeof(int()), " bytes");
+print("The size of float is: ", sys.getsizeof(float()), " bytes");
+print("The size of char is: ", sys.getsizeof(str()), " bytes");
+
+#program to swap to numbers
+print("\nEnter first number: ");
+a = int(input());
+print("Enter second number: ");
+b = int(input());
+print("Before swapping: a =", a, "b =", b);
+c = a;
+a = b;
+b = c;
+print("After swapping: a =", a, "b =", b);
